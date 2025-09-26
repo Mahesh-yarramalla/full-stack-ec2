@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 function App() {
   const [message, setMessage] = useState("");
   useEffect(() => {
-    fetch("http://<EC2_PUBLIC_IP>:5000/api")
+    fetch("http://18.233.99.46:5000/api")
       .then(res => res.json())
       .then(data => setMessage(data.message));
   }, []);
